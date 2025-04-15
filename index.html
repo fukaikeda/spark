@@ -6,82 +6,226 @@
 <body>
 
     <div class="sidenav">
-        <a href="#">Introduction</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <a href="#background">Section 1: Background</a>
+        <a href="#goals">Section 2: Project Goals</a>
+        <a href="#early">Section 3: Early Exploration</a>
+        <a href="#lofi">Section 4: Low-Fi Prototype</a>
+        <a href="#hifi">Section 5: Hi-Fi Prototype</a>
+        <a href="#closing">Section 6: Closing Thoughts</a>
+        
       </div>
       
 
     <div class="container" id="content">
         <div class="section">
-            <h2>Redesign of SparkAI</h2>
-            <p class="paragraph">In this page, we will be looking at the user interface of the <b>3D Printers</b> in
-            the Brown Design Workshop, a student makerspace.</p>
+            <h2>Designing SparkGPT: Accelerating Solar Development through Conversational AI</h2>
         </div>
 
         <div class="section">
-            <p class="highlight" id="introduction">Introduction</p>
-            <p class="paragraph">The <b><a href="browndesignworkshop.org">Brown Design Workshop</a></b> is a makerspace 
-                located in Brown University's engineering building, open to all. It's ususally busy with students and community
-                members realazing their creative ambitions. <br>
+            <p class="highlight" id="background">Section 1: Background
+            </p>
+            <p class="paragraph">
+                Solar and battery developers spend significant time gathering critical information like zoning rules, 
+                permitting hurdles, and historical records. In the United States, there are 3000+ counties, 10,000+ 
+                building permit jurisdictions and more than 2,000 energy-regulating entities - each with their own 
+                set of rules [Source: <a href="https://sparknotes.beehiiv.com/p/beyond-chatgpt-why-renewable-energy-needs-specialized-ai">SparkAI</a>]. 
+                Spark AI currently compiles this data into static reports, which are 
+                executive summaries with useful information for developers. <br>
                 <br>
-                Although it is a very exciting space, it has over 1000 members and this means the place
-                is often very busy and welcomes a variety of users. Sometimes, as a monitor, I notice users
-                have issues in the interaction with different components. <br>
-                <br>
-                Therefore, I decided to look into the interaction and evaluating the users needs, to 
-                help us find a long-term solution for increasing usability.
+                However, these reports can't capture every data point, and manually navigating them remains inefficient.
+                To resolve this issue, our team was asked to design SparkGPT — a new interactive search feature inside of 
+                Spark's web platform that coexists with the report. Using SparkGPT, users can ask nuanced questions and 
+                quickly receive verified, cited answers, bridging the gap between raw data and the high level insights 
+                captured in the report. 
+
             </p>
         </div>
 
-   
 
         <div class="section">
-            <p class="highlight" id="prusa">The Prusa Interface</p>
+            <p class="highlight" id="goals">Section 2: Project Goals</p>
+            <ul><li><b>Explore Design Directions</b></li>
+                <ul>
+                    <li>Brainstorm and evaluate multiple interfaces for SparkGPT, experimenting with how it could integrate 
+                    into Spark AI's existing report system</li>
+                </ul>
+                <li><b>Build Interactive Prototypes</b></li>
+                <ul>
+                    <li>Create a basic low-fidelity prototype that outlines the basic visual components of the feature</li>
+                    <li>Create an interactive high-fidelity prototype that demonstrates how users could engage with SparkGPT to extract meaningful insights</li>
+                
+                </ul>
+                <li><b>Support Source Transparency</b></li>
+                <ul>
+                    <li>Ensure every SparkGPT response includes clear, clickable citations that direct a user to the original, raw source (e.g., 
+                        zoning document, meeting record, article)</li>
+                </ul>
+                <li><b>Balance Functionality and Usability</b></li>
+                <ul>
+                    <li>Prototype a feature that meets both functionality and usability standards, making it intuitive and efficient for solar 
+                        developers under time constraints </li>
+                </ul>
+            </ul>
+        </div>
+
+        <div class="section">
+            <p class="highlight" id="early">Section 3: Early Exploration</p>
+            <p class="paragraph">With these goals in mind, we sketched four possible designs for the SparkGPT feature.</p>
             <div class="image-container">
-                <img src='images/prusa.png' 
-                alt="Image of a Prusa 3D Printer with labels on the different interactive elements">
+                <img src='images/design1.png' 
+                alt="Sketch of a frontend design on SparkAI">
             </div>
-            <p class="paragraph"> One concern I had after interaction with the interface itself
-                is how many of the settings are 'bundled' together, and the difficult callibration
-                settings are often mixed up with the print settings, which may provide a 'black hole'
-                experience for the beginning users.
-            </p>
-        </div>
 
-        <div class="section">
-            <p class="highlight" id="observations">Recording Observations </p>
-            <p class="paragraph">Based on the initial discoveries I had with the Prusa printer
-                itself, I decided that my observations were going to be of three different users:
-                a beginning, intermediate, and advanced users. By observing the actions of each
-                level of user, I could get insight into a variety of experiences.
-            </p>
-        </div>
+            <div class="image-container">
+                <img src='images/design2.png' 
+                alt="Sketch of a frontend design on SparkAI">
+            </div>
 
-        <div class="section">
-            <p class="highlight" id="personas">Personas</p>
-            <p class="paragraph">As mentioned in the last section, these users have such different experiences. Therefore, I begin to focus on a more
-                niche user. I do this by creating two personas based on the observations I conducted. They are both beginners,
-                but have different struggles.</p>
-        </div>
-        <div class="section">
-            <p class="highlight" id="story">Storyboarding</p>
-            <p class="paragraph">Then, I focus even more on a specific user by taking their journey and storyboarding it. This 
-                process allows us to understand the specific points in a user's journey and their emotions in each,
-            highlighting key points of improvement. </p>
-        </div>
+            <div class="image-container">
+                <img src='images/design3.png' 
+                alt="Sketch of a frontend design on SparkAI">
+            </div>
 
-        <p class="highlight" id="reflection">Reflections</p>
-            <p class="paragraph">This activity helped me understand the different users of the 3D printers in
-                the BDW and how each users interacts with them. Particularly, reviewing the users that are in
-                a category the 'furthest away' from us helped me realize what changes are needed to make the
-                technology useful for everyone.<br>
+            <div class="image-container">
+                <img src='images/design4.png' 
+                alt="Sketch of a frontend design on SparkAI">
+            </div>
+
+    
+
+                <section>
+                    <h3>Key Ideas</h3>
+                    <ul>
+                        <li>Two possible user workflows:</li>
+                        <ul>
+                            <li>(1) SparkGPT is integrated into the Reports feature, and each chat is linked to a specific report.</li>
+                            <li>(2) SparkGPT is a standalone feature on the SparkAI webpage. </li>
+                        </ul>
+                        <li>Incorporating a side-by-side or top-bottom view of both the chat and the report</li>
+                        <li>Allowing users to dig deeper into citations sourced for SparkGPT's response </li>
+                </ul>
                 <br>
-                While software changes are difficult to implement on my level, there are a variety of 
-                methods for myself to be involved in increasing the usability, such as providing more directed
-                education during workshops, creating signage to help users, and be avaliable to answer questions. 
-                I want to implement these changes to make the 3DP experience better for a wide audience.
+                </section>
+
+                <section>
+                    <h3>Design Sketch Justifications</h3>
+                  
+                    <h4>Home Screen</h4>
+                    <ul>
+                      <li>Explored two design philosophies:</li>
+                      <ul>
+                        <li><strong>Design #2:</strong> Information-dense, landing page style</li>
+                        <li><strong>Designs #1 & #4:</strong> Modern, minimalist aesthetic (aligned with current SparkAI design)</li>
+                      </ul>
+                      <li>Group discussed whether SparkGPT warranted a full homepage redesign or a lighter touch.</li>
+                      <li><strong>Final decision:</strong> Iterative enhancement using the minimalist design for smoother integration.</li>
+                    </ul>
+                  
+                    <h4>Chat Screen</h4>
+                    <ul>
+                      <li>Continued the modern minimalist approach seen in leading AI chat interfaces.</li>
+                      <li>Design aligned with success metrics from the client’s blurb:</li>
+                      <ul>
+                        <li>Users should be able to query and receive actionable information to inform energy project decisions.</li>
+                      </ul>
+                      <li>Included suggestion buttons for prompting example questions and guiding user interaction.</li>
+                    </ul>
+                  
+                    <h4>Expanded Chat Screen</h4>
+                    <ul>
+                      <li>Created in response to client feedback emphasizing source transparency.</li>
+                      <li>Introduced split-screen layout for comparing SparkGPT responses with original source documents.</li>
+                      <li><strong>Design #3 innovation:</strong> A small search button on the Reports page to launch SparkGPT.</li>
+                      <li>Client later noted this could cause confusion (seeming like a generic search tool instead of a chat interface).</li>
+                      <li>These iterations helped highlight which sketches best advanced the product vision.</li>
+                    </ul>
+                  </section>
+                  
+
+
+        </div>
+
+        <div class="section">
+            <p class="highlight" id="lofi">Section 4: Low-Fi Prototype</p>
+            <p class="paragraph">Next, we consolidated our sketches into three wireframe screens. <br>
+                <br>
+
+                For our final version of the Menu Viewer wireframe, we took elements from Design 3 and 
+                decided to have SparkGPT be an integrated feature in the Reports section rather than a 
+                standalone feature so that chats can be linked to specific reports. The Report & Chat 
+                wireframe took inspiration from designs 1, 3, and 4, implementing some variation of 
+                side-by-side reports and chat view, which would allow users to scan through the report 
+                and ask questions simultaneously. Lastly, the Citation & Chat wireframe combined both 
+                Design 2 and Design 3, which highlighted the importance of linking to SparkGPT's answers 
+                to the original citations.<br>
+                <br>
+                
+                For a more detailed walkthrough of these wireframes, please refer to our 
+                <a href="https://www.loom.com/share/a697c08463dd429eb91614ba0a487180?sid=d90d8c51-ddbd-4e3a-a15c-f99f7a771c7c">Loom recording!</a><br>
+            <br>
+            Menu Viewer:<br></p>
+            <div class="image-container">
+                <img src='images/menu.png' 
+                alt="Lo-fi Prototype of a frontend design on SparkAI">
+            </div>
+            <p class="paragraph">Report & Chat Screen: <br> </p>
+            <div class="image-container">
+                <img src='images/reportchat.png' 
+                alt="Lofi prototype of a frontend design on SparkAI">
+            </div>
+            <p class="paragraph">Citation & Chat Screen: <br> </p>
+            <div class="image-container">
+                <img src='images/citation.png' 
+                alt="Lofi prototype of a frontend design on SparkAI">
+            </div>
+        </div>
+
+
+        <div class="section">
+            <p class="highlight" id="hifi">Section 5: High-Fi Prototype</p>
+            <section>
+                <h3>Major Iterations Made:</h3>
+                <p class="paragraph">We presented the previous wireframes in a live session with 
+                    SparkAI and received actionable feedback, especially around citation clarity 
+                    and integration points. Based on feedback we received from the Spark AI team, 
+                    we made the following key adjustments to our design for the final, high-fidelity
+                     prototype:</p>
+
+                <ul>
+                    <li>Two Entry Points:</li>
+                    <ul>
+                        <li>1. From the Homepage </li>
+                            <ul>
+                                <li>Users click “SparkGPT,” pick a report (e.g. Lancaster, PA), and ask questions
+                                </li>
+                            </ul>
+                        <li>2. From a Report Page</li>
+                            <ul>
+                                <li>Users click a chat icon to open SparkGPT next to their current report
+                                </li>
+                            </ul>
+                    </ul>
+                    <li>Searchable Chat Log Feature</li>
+                    <ul>
+                        <li>Added a search bar for SparkGPT histories, helping users find previous answers quickly
+                        </li>
+                    </ul>
+                    <li>Citation Transparency
+                    </li>
+                    <ul>
+                        <li>Highlighted the corresponding text of the raw source directly instead of vague source links
+                        </li>
+                    </ul>
+            </section>
+
+            <p class="paragraph">For a more detailed walkthrough of these wireframes, please refer to our 
+                <a href="https://www.loom.com/share/59abd0312c1c47728616b2667a1c5a7b?sid=f22df487-d8a6-418c-8988-f742666a9683">Loom demo!</a>
+                To interact with our prototype, click <a href="https://www.figma.com/proto/ha3aECt87cia06GMfs9Pcx/SparkAI-Prototype?node-id=10-2&t=CcjtvQ3jdjD6u65Y-1&starting-point-node-id=10%3A2">here!</a></p>
+
+        </div>
+
+        <p class="highlight" id="closing">Section 6: Closing Thoughts</p>
+            <p class="paragraph">This space is for reflection and acknowledgements.
             </p>
         
 
